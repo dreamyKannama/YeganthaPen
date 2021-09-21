@@ -1,3 +1,12 @@
+
+
+<!-- post details display-->
+<section id="homeCard">
+  <span class="h1"><a href="<%- url_for("blog") %>">Blog</a></span>
+  <span class="h1"><a href="<%- url_for("sketches") %>">Sketches</a></span>
+</section>
+
+
 <section id="about">
   <% if (config.description) { %>
     <%- markdown(config.description) %>
@@ -14,6 +23,8 @@
   </p>
 </section>
 
+<!-- post details display-->
+<!--
 <section id="writing">
   <span class="h1"><a href="<%- url_for("archives") %>">Writing</a></span>
   <ul class="post-list">
@@ -25,7 +36,9 @@
     <% }); %>
   </ul>
 </section>
+-->
 
+<!--
 <% if (site.data.projects) { %>
 <section id="projects">
   <span class="h1"><a href="<%- url_for(theme.projects_url) %>">Projects</a></span>
@@ -38,3 +51,4 @@
   </ul>
 </section>
 <% } %>
+-->
