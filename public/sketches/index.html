@@ -59,7 +59,7 @@
 
 <body>
     <div class="banner">
-<div id="blogtitel" class="blogtitel">YenganthaPen</div>
+
 <ul id="wrapper" class="wrapper">
   <div class="sun">
     <div class="star"></div>
@@ -91,12 +91,6 @@
       <div class="content index width mx-auto px2 my4">
           
             <header id="header">
-  <a href="/">
-  
-    
-      <div id="logo" style="background-image: url(/images/logo.png);"></div>
-    
-  
     <div id="title">
       <h1>YenganthaPen</h1>
     </div>
@@ -121,12 +115,11 @@
 
   <div class="content" itemprop="ContentBody">
 
-    <div id="nav card">
-        <ul>
-            <li><a href="/traditional/"> Traditional Art</a></li>
+    <div id="homeCard">
+       
+            <a href="/traditional/"> Traditional Art</a>
             
-            <li><a href="/digital/"> Digital Art</a></li>
-        </ul>    
+            <a href="/digital/"> Digital Art</a> 
         </div>
     
   </div>
@@ -142,7 +135,9 @@
   <div class="footer-right">
     <nav>
       <ul>
-         
+        <li class="icon">
+          <a href="#"><i class="fa fa-bars fa-2x"></i></a>
+        </li>
           <li><a href="/home/">Home</a></li>
          
           <li><a href="/about/">About</a></li>
@@ -168,5 +163,64 @@
 
 
     </div>
+
+    <style>
+
+#title{
+        text-align: center;
+        color: black;
+      }
+
+      #nav{
+        text-align: center;
+        color: black;
+      }
+      #homeCard{
+        display: flex;
+        align-items: flex-end;
+        grid-gap: 4rem;display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 4rem;
+        padding: 4rem;
+        margin: 0 auto;
+        width: max-content;
+    
+      }
+      
+      #homeCard:hover {
+      transform: rotate(0);
+      }
+    
+      /*Media Queries*/
+      @media screen and (max-width: 1285px) {
+        #homeCard {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+    @media screen and (max-width: 900px) {
+      #homeCard {
+        grid-template-columns: 1fr;
+      }
+      #homeCard {
+        justify-content: center;
+      }
+      #homeCard {
+        margin-left: 0;
+        text-align: center;
+      }
+    }
+    
+    @media screen and (max-width: 500px) {
+      #homeCard {
+        padding: 4rem 2rem;
+      }
+      #homeCard {
+        max-width: calc(100vw - 4rem);
+      }
+    }
+    </style>
 </body>
 </html>

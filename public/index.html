@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta property="og:type" content="website">
 <meta property="og:title" content="YenganthaPen">
-<meta property="og:url" content=" https://dreamykannama.github.io/YeganthaPen/">
+<meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="YenganthaPen">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="Abilasha">
@@ -57,7 +57,6 @@
 
 <body>
     <div class="banner">
-<div id="blogtitel" class="blogtitel">YenganthaPen</div>
 <ul id="wrapper" class="wrapper">
   <div class="sun">
     <div class="star"></div>
@@ -85,28 +84,51 @@
 </div>
 
     <div class="background">
+     
+      
       
       <div class="content index width mx-auto px2 my4">
           
-        <header id="header">
-
+            <header id="header">
+ <!-- <a href="/">
+  
+    
+      <div id="logo" style="background-image: url(/images/logo.png);"></div>
+    
+  
+  -->
+    <div id="title">
+      <h1>YenganthaPen</h1>
+    </div>
+  </a>
   <div id="nav">
     <ul>
+      <li class="icon">
+        <a href="#"><i class="fa fa-bars fa-2x"></i></a>
+      </li>
        
         <li><a href="/home/">Home</a></li>
        
-        <li><a href="/public/about/">About</a></li>
+        <li><a href="/about/">About</a></li>
        
-        <li><a href="/public/archives/">Writing</a></li>
-
-        <li><a href="/public/sketches/">Sketches</a></li>
-    
+        <li><a href="/archives/">Writing</a></li>
+       
+        <li><a href="/sketches/">Sketches</a></li>
+      
     </ul>
   </div>
 </header>
 
           
-          
+          <!-- post details display-->
+<section id="cardDisplay" >
+  <div id="homeCard">
+    <a href="/blog/"> Blog</a>
+    <a href="/sketches/"> Sketches</a>
+  </div> 
+</section>
+
+
 <section id="about">
   
   <p style="display: inline">
@@ -127,7 +149,103 @@
   </p>
 </section>
 
+<!-- post details display-->
+<!--
+<section id="writing">
+  <span class="h1"><a href="/archives">Writing</a></span>
+  <ul class="post-list">
+    
+      <li class="post-item">
+        
+    <div class="meta">
+        <time datetime="2021-09-22T15:09:41.000Z" itemprop="datePublished">2021-09-22</time>
+    </div>
+
+
+        <span>
+    
+        <a class="" href="/2021/09/22/New-Post-1/">New Post 1</a>
+    
+
+
+</span>
+      </li>
+    
+      <li class="post-item">
+        
+    <div class="meta">
+        <time datetime="2021-09-15T12:02:41.983Z" itemprop="datePublished">2021-09-15</time>
+    </div>
+
+
+        <span>
+    
+        <a class="" href="/2021/09/15/hello-world/">Hello World</a>
+    
+
+
+</span>
+      </li>
+    
+  </ul>
+</section>
+-->
+
+<!--
+
+-->
+
+<style>
+
+  #homeCard{
+    display: flex;
+    align-items: flex-end;
+    grid-gap: 4rem;display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    padding: 4rem;
+    margin: 0 auto;
+    width: max-content;
+
+  }
+  
+  #homeCard:hover {
+  transform: rotate(0);
+  }
+
+  /*Media Queries*/
+  @media screen and (max-width: 1285px) {
+    #homeCard {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #homeCard {
+    grid-template-columns: 1fr;
+  }
+  #homeCard {
+    justify-content: center;
+  }
+  #homeCard {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #homeCard {
+    padding: 4rem 2rem;
+  }
+  #homeCard {
+    max-width: calc(100vw - 4rem);
+  }
+}
+</style>
       </div>
+    
       
       <footer id="footer">
   <div class="footer-left">
@@ -144,6 +262,7 @@
           <li><a href="/archives/">Writing</a></li>
          
           <li><a href="/sketches/">Sketches</a></li>
+        
       </ul>
     </nav>
   </div>

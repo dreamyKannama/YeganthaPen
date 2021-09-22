@@ -14,6 +14,7 @@
           <%- body %>
       </div>
       <% if (is_post()) { %>
+        <%- partial('_partial/header') %>
        <%- partial('_partial/post/actions_mobile') %>
       <% } %>
       <%- partial('_partial/footer') %>

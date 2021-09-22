@@ -1,0 +1,104 @@
+<!-- post details display-->
+<section id="cardDisplay" >
+  <div id="homeCard">
+    <a href="/blog/"> Blog</a>
+    <a href="/sketches/"> Sketches</a>
+  </div> 
+</section>
+
+
+<section id="about">
+<% if (config.description) { %>
+  <%- markdown(config.description) %>
+<% } %>
+<p style="display: inline">
+  <% if (theme.customize.social_links) { %>
+    Find me on
+    <ul id="sociallinks">
+      <% for(var i in theme.customize.social_links) { %>
+        <li><a class="icon" target="_blank" href="<%- url_for(theme.customize.social_links[i]) %>" title="<%= i %>"><i class="fa fa-<%= i %>"></i></a></li>
+      <% } %>
+    </ul>.
+  <% } %>
+</p>
+</section>
+
+<!-- post details display-->
+<!--
+<section id="writing">
+<span class="h1"><a href="<%- url_for("archives") %>">Writing</a></span>
+<ul class="post-list">
+  <% site.posts.sort('date', 'desc').limit(theme.customize.post_count || 5).each(function(post, i){ %>
+    <li class="post-item">
+      <%- partial('_partial/post/date', { post: post, class_name: 'meta' }) %>
+      <span><%- partial('_partial/post/title', { post: post, index: true, class_name: '' }) %></span>
+    </li>
+  <% }); %>
+</ul>
+</section>
+-->
+
+<!--
+<% if (site.data.projects) { %>
+<section id="projects">
+<span class="h1"><a href="<%- url_for(theme.projects_url) %>">Projects</a></span>
+<ul class="project-list">
+  <% for(var obj in site.data.projects){ %>
+    <li class="project-item">
+      <a href="<%= site.data.projects[obj].url %>"><%= site.data.projects[obj].name %></a>: <%= site.data.projects[obj].desc %>
+    </li>
+  <% } %>
+</ul>
+</section>
+<% } %>
+-->
+
+<style>
+
+#homeCard{
+  display: flex;
+  align-items: flex-end;
+  grid-gap: 4rem;display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
+  padding: 4rem;
+  margin: 0 auto;
+  width: max-content;
+
+}
+
+#homeCard:hover {
+transform: rotate(0);
+}
+
+/*Media Queries*/
+@media screen and (max-width: 1285px) {
+  #homeCard {
+  grid-template-columns: 1fr 1fr;
+}
+}
+
+@media screen and (max-width: 900px) {
+#homeCard {
+  grid-template-columns: 1fr;
+}
+#homeCard {
+  justify-content: center;
+}
+#homeCard {
+  margin-left: 0;
+  text-align: center;
+}
+}
+
+@media screen and (max-width: 500px) {
+#homeCard {
+  padding: 4rem 2rem;
+}
+#homeCard {
+  max-width: calc(100vw - 4rem);
+}
+}
+</style>

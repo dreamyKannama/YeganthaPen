@@ -4,15 +4,18 @@
 <body>
     <%- partial('_partial/banner') %>
     <div class="background">
+     
       <% if (is_post()) { %>
         <%- partial('_partial/post/actions_desktop') %>
       <% } %>
+      
       <div class="content index width mx-auto px2 my4">
           <% if (!is_post()) { %>
             <%- partial('_partial/header') %>
           <% } %>
           <%- body %>
       </div>
+    
       <% if (is_post()) { %>
        <%- partial('_partial/post/actions_mobile') %>
       <% } %>
