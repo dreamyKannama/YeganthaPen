@@ -146,8 +146,63 @@
 <!-- Google Analytics -->
 
 <!-- Disqus Comments -->
-
-
     </div>
+    <style>  
+      #title{
+          text-align: center;
+          color: black;
+        }
+  
+        #nav{
+          text-align: center;
+          color: black;
+        }
+        #homeCard{
+          display: flex;
+          align-items: flex-end;
+          grid-gap: 4rem;display: grid;
+          justify-content: center;
+          align-items: center;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-gap: 4rem;
+          padding: 4rem;
+          margin: 0 auto;
+          width: max-content;
+      
+        }
+        
+        #homeCard:hover {
+        transform: rotate(0);
+        }
+      
+        /*Media Queries*/
+        @media screen and (max-width: 1285px) {
+          #homeCard {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      
+      @media screen and (max-width: 900px) {
+        #homeCard {
+          grid-template-columns: 1fr;
+        }
+        #homeCard {
+          justify-content: center;
+        }
+        #homeCard {
+          margin-left: 0;
+          text-align: center;
+        }
+      }
+      
+      @media screen and (max-width: 500px) {
+        #homeCard {
+          padding: 4rem 2rem;
+        }
+        #homeCard {
+          max-width: calc(100vw - 4rem);
+        }
+      }
+      </style>
 </body>
 </html>

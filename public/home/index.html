@@ -101,10 +101,13 @@
 
   <div class="content" itemprop="ContentBody">
     <div id="homeCard">
-      <a href="/blog/"> Blog</a>
-      <a href="/sketches/"> Sketches</a>
-    </div>
-    
+      <a href="/blog/"> 
+        <img id="image-cards" alt="blog" src="/images/blogcard.jpg" width="220" height="280" >
+      </a>
+      <a href="/sketches/"> 
+        <img id="image-cards" alt="sketches" src="/images/sketchcard.jpg" width="220" height="280">
+      </a>
+    </div>   
   </div>
 
 
@@ -145,6 +148,9 @@
 
     </div>
     <style>
+      #image-cards{
+        border-radius: 12px;
+      }
 
       #title{
         text-align: center;
@@ -167,13 +173,15 @@
         padding: 4rem;
         margin: 0 auto;
         width: max-content;
-    
       }
       
       #homeCard:hover {
       transform: rotate(0);
       }
     
+      #image-cards{
+        border-radius: 12px;
+      }
       /*Media Queries*/
       @media screen and (max-width: 1285px) {
         #homeCard {

@@ -1,11 +1,14 @@
 <!-- post details display-->
 <section id="cardDisplay" >
   <div id="homeCard">
-    <a href="/blog/"> Blog</a>
-    <a href="/sketches/"> Sketches</a>
+    <a href="/blog/"> 
+      <img id="image-cards" alt="blog" src="/images/blogcard.jpg" width="220" height="280" >
+    </a>
+    <a href="/sketches/"> 
+      <img id="image-cards" alt="sketches" src="/images/sketchcard.jpg" width="220" height="280">
+    </a>
   </div> 
 </section>
-
 
 <section id="about">
   <% if (config.description) { %>
@@ -72,6 +75,10 @@
   #homeCard:hover {
   transform: rotate(0);
   }
+
+  #image-cards{
+        border-radius: 12px;
+      }
 
   /*Media Queries*/
   @media screen and (max-width: 1285px) {
