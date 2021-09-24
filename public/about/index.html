@@ -56,6 +56,91 @@
 <script src="/lib/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.4.0"></head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+   
+  [type=radio] {
+    display: none;
+  }
+  
+  #slider {
+    height: 55vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+  
+  #slider label {
+    margin: auto;
+    width: 40%;
+    height: 60%;
+    border-radius: 8px;
+    position: absolute;
+    left: 0; right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+  }
+  
+  #s1:checked ~ #slide4, #s2:checked ~ #slide5,
+  #s3:checked ~ #slide1, #s4:checked ~ #slide2,
+  #s5:checked ~ #slide3 {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    transform: translate3d(-30%,0,-200px);
+  }
+  
+  #s1:checked ~ #slide5, #s2:checked ~ #slide1,
+  #s3:checked ~ #slide2, #s4:checked ~ #slide3,
+  #s5:checked ~ #slide4 {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+    transform: translate3d(-15%,0,-100px);
+  }
+  
+  #s1:checked ~ #slide1, #s2:checked ~ #slide2,
+  #s3:checked ~ #slide3, #s4:checked ~ #slide4,
+  #s5:checked ~ #slide5 {
+    box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
+    transform: translate3d(0,0,0);
+  }
+  
+  #s1:checked ~ #slide2, #s2:checked ~ #slide3,
+  #s3:checked ~ #slide4, #s4:checked ~ #slide5,
+  #s5:checked ~ #slide1 {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+    transform: translate3d(15%,0,-100px);
+  }
+  
+  #s1:checked ~ #slide3, #s2:checked ~ #slide4,
+  #s3:checked ~ #slide5, #s4:checked ~ #slide1,
+  #s5:checked ~ #slide2 {
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
+    transform: translate3d(30%,0,-200px);
+  }
+  
+  #slide1 { background: linear-gradient(to bottom right,#bfee3e,#3684dd);}
+  #slide2 { background: linear-gradient(to bottom right,#c069e2,#48b1bf);}
+  #slide3 { background: linear-gradient(to bottom right,#6a3dd3,#62b48e); }
+  #slide4 { background: linear-gradient(to bottom right,#a6f7d5,#82e264);}
+  #slide5 { background: linear-gradient(to bottom right,#eeafaf,#e9ab65); }
+  /*
+  #slide6 { background: #FF5722 }
+  #slide7 { background: #FF5722 }
+  #slide8 { background: #FF5722 }
+  #slide9 { background: #FF5722 }
+  #slide10 { background: #FF5722 }
+  */
+
+  @media only screen and (max-width:300px){
+    #slider label{
+      
+      width:120px;
+      height:150px;
+      margin:50px;
+
+}  } 
+  </style>
 
 <body>
     <div class="banner">
@@ -112,19 +197,20 @@
       
     </ul>
   </div>
-</header>
-
-          
-          <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-  
-
-  <div class="content" itemprop="articleBody">
-    
-  </div>
-</article>
-
-
-      </div>
+</header> 
+    <section id="slider">
+      <input type="radio" name="slider" id="s1">
+      <input type="radio" name="slider" id="s2">
+      <input type="radio" name="slider" id="s3" checked>
+      <input type="radio" name="slider" id="s4">
+      <input type="radio" name="slider" id="s5">
+      <label for="s1" id="slide1">1</label>
+      <label for="s2" id="slide2">2</label>
+      <label for="s3" id="slide3">3</label>
+      <label for="s4" id="slide4">4</label>
+      <label for="s5" id="slide5">5</label>
+    </section>   
+</div>
       
       <footer id="footer">
   <div class="footer-left">
