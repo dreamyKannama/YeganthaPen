@@ -576,7 +576,6 @@ body {
 }
 #header #logo {
   display: inline-block;
-  float: left;
   margin-right: 20px;
   width: 50px;
   height: 50px;
@@ -587,11 +586,15 @@ body {
   filter: grayscale(100%);
 }
 #header #nav {
+  align-items: center; 
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
   letter-spacing: 0.01em;
   font-size: 0.9rem;
   font-style: normal;
   font-weight: 200;
-  color: #5bac4a;
+  color: #12347e;
 }
 #header #nav ul {
   list-style-type: none;
@@ -697,14 +700,14 @@ body {
   margin-left: 15px;
 }
 #header-post #menu-icon:hover {
-  color: #5bac4a;
+  color: #2f0d80;
 }
 #header-post #menu-icon-tablet {
   float: right;
   margin-left: 15px;
 }
 #header-post #menu-icon-tablet:hover {
-  color: #5bac4a;
+  color: #310861;
 }
 #header-post #top-icon-tablet {
   margin-left: 15px;
@@ -713,10 +716,10 @@ body {
   position: fixed;
 }
 #header-post #top-icon-tablet:hover {
-  color: #5bac4a;
+  color: #2f0d80;
 }
 #header-post .active {
-  color: #5bac4a;
+  color: #2f0d80;
 }
 @media screen and (max-height: 650px) {
   #header-post #menu {
