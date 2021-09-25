@@ -10,14 +10,14 @@
   </div> 
 </section>
 
-<section id="about">
+<section id="about" style="align-items: center;"> 
   <% if (config.description) { %>
     <%- markdown(config.description) %>
   <% } %>
-  <p style="display: inline">
+  <p style="align-items: center;">
     <% if (theme.customize.social_links) { %>
       Find me on
-      <ul id="sociallinks">
+      <ul id="sociallinks" style="align-items: center;">
         <% for(var i in theme.customize.social_links) { %>
           <li><a class="icon" target="_blank" href="<%- url_for(theme.customize.social_links[i]) %>" title="<%= i %>"><i class="fa fa-<%= i %>"></i></a></li>
         <% } %>
@@ -54,6 +54,12 @@
 <% } %>
 -->
 <style>
+
+  #about{
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
 
   #homeCard{
     display: flex;
