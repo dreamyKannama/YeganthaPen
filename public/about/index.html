@@ -13,44 +13,20 @@
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-09-21T08:49:49.000Z">
 <meta property="article:modified_time" content="2021-09-21T08:52:08.113Z">
-<meta property="article:author" content="Abilasha">
-<meta name="twitter:card" content="summary">
-    
-    
-        
-          
-              <link rel="shortcut icon" href="/images/favicon.ico">
-          
-        
-        
-          
-            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
-          
-        
-        
-          
-            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-          
-        
-    
+<meta property="article:author" content="YeganthaPen">
+<meta name="twitter:card" content="summary">      
+<link rel="shortcut icon" href="/images/favicon.ico">
+<link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">    
     <!-- title -->
     <title>about</title>
     <!-- styles -->
     
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
-
-    
-<link rel="stylesheet" href="/lib/meslo-LG/styles.css">
-
-    
-<link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
-
-    
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">   
+<link rel="stylesheet" href="/lib/meslo-LG/styles.css">   
+<link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">   
 <link rel="stylesheet" href="/css/style.css">
-
     <!-- rss -->
-    
-    
     <!-- jquery -->
     
 <script src="/lib/jquery/jquery.min.js"></script>
@@ -83,7 +59,27 @@
     cursor: pointer;
     transition: transform 0.4s ease;
   }
-  
+
+  #slider #firstimg{
+   margin-left: 80px;
+   margin-top: 20px;
+  }
+  #slider #secondimg{
+    margin-left: 80px;
+    margin-top: 20px;
+    
+  }
+  #slider #firsttext{
+    margin-left: 80px;
+    color: white;
+    text-shadow: 5px 2px 5px rgb(255, 255, 255); 
+  }
+  #slider #secondtext{
+    margin-left: 80px; 
+    color: white;
+    text-shadow: 5px 2px 5px rgb(255, 255, 255); 
+  }
+
   #s1:checked ~ #slide4, #s2:checked ~ #slide5,
   #s3:checked ~ #slide1, #s4:checked ~ #slide2,
   #s5:checked ~ #slide3 {
@@ -133,88 +129,176 @@
   */
 
   @media only screen and (max-width:300px){
-    #slider label{
-      
-      width:120px;
-      height:150px;
-      margin:50px;
+    #slider {
+      margin-top: 30px;
+    height: 55vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
 
-}  } 
+    #slider label{
+      margin-top: 80px;
+      width:40%;
+      height:90%;
+      margin:50px;
+    } 
+    #slider #firstimg{
+   margin-left: 80px;
+   margin-top: 20px;
+  }
+  #slider #secondimg{
+    margin-left: 80px;
+    margin-top: 20px;
+    
+  }
+  #slider #firsttext{
+    margin-left: 80px;
+    color: white;
+    text-shadow: 5px 2px 5px rgb(255, 255, 255); 
+  }
+  #slider #secondtext{
+    margin-left: 80px; 
+    color: white;
+    text-shadow: 5px 2px 5px rgb(255, 255, 255); 
+  }
+
+
+} 
   </style>
 
 <body>
-    <div class="banner">
-
-<ul id="wrapper" class="wrapper">
-  <div class="sun">
-    <div class="star"></div>
-  </div>
-  <div class="mercury">
-    <div class="planet">
-      <div class="shadow"></div>
-    </div>
-  </div>
-  <div class="venus">
-    <div class="planet">
-      <div class="shadow"></div>
-    </div>
-  </div>
-  <div class="earth">
-    <div class="planet"><div class="shadow"></div></div>
-  </div>
-  <div class="mars">
-    <div class="planet"><div class="shadow"></div></div>
-  </div>
-  <div class="jupiter">
-    <div class="planet"><div class="shadow"></div></div>
-  </div>
-</ul>
-</div>
-
+  <div class="banner">
+    <section id="logo">
+      <img  alt="Logo" src="/images/LOGO.jpg" width="280" height="260">
+    </section>
+ </div>
+<br><br>
     <div class="background">
       
       <div class="content index width mx-auto px2 my4">
           
-            <header id="header">
-  
-    <div id="title">
-      <h1>YenganthaPen</h1>
-    </div>
-  </a>
-  <div id="nav">
-    <ul>
-      <li class="icon">
-        <a href="#"><i class="fa fa-bars fa-2x"></i></a>
-      </li>
-       
-        <li><a href="/home/">Home</a></li>
-       
-        <li><a href="/about/">About</a></li>
-       
-        <li><a href="/blog/">Writing</a></li>
-       
-        <li><a target="_blank" rel="noopener" href="http://github.com/tzvetkov75">Projects</a></li>
-      
-    </ul>
-  </div>
-</header> 
+        <header id="header">
+          <div id="nav">
+            <ul>
+              <li class="icon">
+                <a href="#"><i class="fa fa-bars fa-2x"></i></a>
+              </li>
+              
+                <li><a href="/home/">Home</a></li>
+              
+                <li><a href="/about/">About</a></li>
+              
+                <li><a href="/blog/">Writing</a></li>
+              
+                <li><a target="_blank" rel="noopener" href="http://github.com/tzvetkov75">Projects</a></li>
+              
+            </ul>
+          </div>
+        </header> 
+
     <section id="slider">
       <input type="radio" name="slider" id="s1">
       <input type="radio" name="slider" id="s2">
       <input type="radio" name="slider" id="s3" checked>
       <input type="radio" name="slider" id="s4">
       <input type="radio" name="slider" id="s5">
-      <label for="s1" id="slide1">1</label>
-      <label for="s2" id="slide2">2</label>
-      <label for="s3" id="slide3">3</label>
-      <label for="s4" id="slide4">4</label>
-      <label for="s5" id="slide5">5</label>
-    </section>   
+      <label for="s1" id="slide1">
+          <div id="firstimg">
+            <img  alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
+          </div>
+          <div id="firsttext">
+            Self Taught Artist
+          </div>
+          <div id="secondimg">
+            <img  alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
+          </div>
+          <div id="secondtext">
+            Computer Science Engg
+          </div>
+      </label>
+      <label for="s2" id="slide2">
+        <div id="firstimg">
+          <img  alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
+        </div>
+        <div id="firsttext">
+          Self Taught Artist
+        </div>
+        <div id="secondimg">
+          <img  alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
+        </div>
+        <div id="secondtext">
+          Computer Science Engg
+        </div>
+      </label>
+      <label for="s3" id="slide3">
+        <div id="firstimg">
+          <img  alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
+        </div>
+        <div id="firsttext">
+          Self Taught Artist
+        </div>
+        <div id="secondimg">
+          <img  alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
+        </div>
+        <div id="secondtext">
+          Computer Science Engg
+        </div>
+      </label>
+      <label for="s4" id="slide4">
+        <div id="firstimg">
+          <img  alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
+        </div>
+        <div id="firsttext">
+          Self Taught Artist
+        </div>
+        <div id="secondimg">
+          <img  alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
+        </div>
+        <div id="secondtext">
+          Computer Science Engg
+        </div>
+      </label>
+      <label for="s5" id="slide5">
+        <div id="firstimg">
+          <img  alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
+        </div>
+        <div id="firsttext">
+          Self Taught Artist
+        </div>
+        <div id="secondimg">
+          <img  alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
+        </div>
+        <div id="secondtext">
+          Computer Science Engg
+        </div>
+      </label>
+    </section> 
+    
+    <section id="about">
+      <p id="sociallinks_p" style="display: inline-block ; padding:1em;">
+          Find me on
+          <ul id="sociallinks">
+            
+              <li><a class="icon" target="_blank" href="https://github.com/tzvetkov75/solar-theme-hexo" title="github"><i class="fa fa-github"></i></a></li>
+            
+              <li><a class="icon" target="_blank" href="/" title="twitter"><i class="fa fa-twitter"></i></a></li>
+            
+              <li><a class="icon" target="_blank" href="/" title="facebook"><i class="fa fa-facebook"></i></a></li>
+            
+              <li><a class="icon" target="_blank" href="/" title="linkedin"><i class="fa fa-linkedin"></i></a></li>
+            
+          </ul>.
+        
+      </p>
+    </section>
+
+</div>
 </div>
       
       <footer id="footer">
   <div class="footer-left">
-    Copyright &copy; 2021 Abilasha
+    Copyright &copy; 2021 YeganthaPen
   </div>
   <div class="footer-right">
     <nav>
@@ -256,5 +340,20 @@
         text-align: center;
         color: black;
       }
+      #about
+      {
+        display: inline; 
+        padding:0.5em;
+        margin: 10px auto auto 230px; 
+      }
+
+      @media screen and (max-width: 500px) {
+          #about
+          {
+            display: inline; 
+            padding:0.5em;
+            margin: 0px 0px 0px 0px; 
+          }
+    }
 </style>
 </html>

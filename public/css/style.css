@@ -1,7 +1,13 @@
 body {
-  background-image: url("../images/digitalart4.jpg");
+  background-image: url("/images/digitalart4.jpg");
   background-repeat: no-repeat;
   background-color: #cccccc;
+}
+
+#logo{
+  align-items: center; 
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .inline {
@@ -633,6 +639,8 @@ body {
   filter: none;
 }
 @media screen and (max-width: 480px) {
+
+
   #header #title {
     padding-top: 9px;
     padding-bottom: 9px;
@@ -722,6 +730,7 @@ body {
   color: #2f0d80;
 }
 @media screen and (max-height: 650px) {
+
   #header-post #menu {
     visibility: hidden;
   }
@@ -817,6 +826,8 @@ body {
   display: none;
 }
 @media screen and (max-width: 500px) {
+
+
   #header-post {
     display: none;
   }
@@ -830,11 +841,13 @@ body {
   }
 }
 @media screen and (max-width: 1199px) {
+  
   #header-post #toc {
     display: none;
   }
 }
 @media screen and (min-width: 900px) {
+
   #header-post #menu-icon-tablet {
     display: none !important;
   }
@@ -843,6 +856,8 @@ body {
   }
 }
 @media screen and (min-width: 1199px) {
+
+
   #header-post #actions {
     width: auto;
   }
@@ -990,22 +1005,24 @@ body {
   display: none;
 }
 @media screen and (min-width: 500px) {
+
   #footer-post-container {
     display: none;
   }
 }
+
+#sociallinks_p
+  {
+    display: inline ; 
+    padding:0.5em;
+    margin: 10px auto auto 230px;
+  }
 #sociallinks {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 4rem;
-    padding: 4rem;
-    margin: 0 auto;
-    width: max-content;
+    display: inline;
+    
 }
 #sociallinks li {
-  display: inline-block;
+  display: inline;
 }
 #sociallinks li:after {
   content: ", ";
@@ -1017,14 +1034,17 @@ body {
   content: " and ";
 }
 .post-list {
+  align-items: center;
   padding: 0;
 }
 .post-list .post-item {
+  align-items: center;
   list-style-type: none;
   margin-left: 0;
   margin-bottom: 1rem;
 }
 .post-list .post-item .meta {
+  align-items: center;
   display: block;
   font-size: 14px;
   color: #666;
