@@ -33,6 +33,7 @@
 
 <meta name="generator" content="Hexo 5.4.0"></head>
 <style>
+  
   * {
     margin: 0;
     padding: 0;
@@ -129,39 +130,87 @@
   */
 
   @media only screen and (max-width:300px){
-    #slider {
-      margin-top: 30px;
-    height: 55vw;
+ 
+   
+  [type=radio] {
+    display: none;
+  }
+  #slider {
+    margin-left: -90px;
+    margin-top: 50px;
+    justify-content: center;
+    height:150vw;
+    width:150vw;
     position: relative;
     perspective: 1000px;
     transform-style: preserve-3d;
   }
 
     #slider label{
-      margin-top: 80px;
-      width:40%;
-      height:90%;
-      margin:50px;
+      margin-top: 8px;
     } 
     #slider #firstimg{
-   margin-left: 80px;
-   margin-top: 20px;
+   margin-left:5vw;
+   margin-top: 9px;
   }
   #slider #secondimg{
-    margin-left: 80px;
-    margin-top: 20px;
+    margin-left: 9px;
+    margin-top: 9px;
     
   }
   #slider #firsttext{
-    margin-left: 80px;
+    margin-left:9px;
     color: white;
     text-shadow: 5px 2px 5px rgb(255, 255, 255); 
   }
   #slider #secondtext{
-    margin-left: 80px; 
+    margin-left: 9px; 
     color: white;
     text-shadow: 5px 2px 5px rgb(255, 255, 255); 
   }
+
+
+} 
+
+@media only screen and (max-width:900px){
+ 
+   
+ [type=radio] {
+   display: none;
+ }
+ #slider {
+   margin-left: -10px;
+   margin-top: 50px;
+   justify-content: center;
+   height:80vw;
+   width:80vw;
+   position: relative;
+   perspective: 1000px;
+   transform-style: preserve-3d;
+ }
+
+   #slider label{
+     margin-top: 8px;
+   } 
+   #slider #firstimg{
+  margin-left:6vw;
+  margin-top: 9px;
+ }
+ #slider #secondimg{
+   margin-left: 6vw;
+   margin-top: 2px;
+   
+ }
+ #slider #firsttext{
+   margin-left:6vw;
+   color: white;
+   text-shadow: 5px 2px 5px rgb(255, 255, 255); 
+ }
+ #slider #secondtext{
+   margin-left: 6vw; 
+   color: white;
+   text-shadow: 5px 2px 5px rgb(255, 255, 255); 
+ }
 
 
 } 
@@ -348,12 +397,14 @@
       }
 
       @media screen and (max-width: 500px) {
+        
           #about
           {
             display: inline; 
             padding:0.5em;
             margin: 0px 0px 0px 0px; 
           }
+          
     }
 </style>
 </html>

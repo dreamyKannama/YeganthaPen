@@ -434,7 +434,7 @@ body {
 .content th {
   font-size: 14px;
   font-weight: bold;
-  color: #dedede;
+  color: #000000;
   border-bottom: 1px dashed #ccc;
   padding: 8px 8px;
 }
@@ -452,8 +452,8 @@ html {
   border-top: 2px solid #b9babc;
 }
 body {
-  color: #b9babc;
-  background-color: #281816;
+  color: #000000;
+  background-color: #ffffff;
   font-size: 15px;
   font-family: "Menlo", monospace;
   font-weight: 400;
@@ -487,7 +487,7 @@ body {
 }
 .content a {
   text-decoration: none;
-  color: #b9babc;
+  color: #000000;
   background-repeat: repeat-x;
   background-position: bottom;
   background-size: 100% 6px;
@@ -569,7 +569,7 @@ body {
   line-height: 2rem;
   font-style: normal;
   font-weight: 700;
-  color: #b9babc;
+  color: #000000;
   margin-top: 0;
   margin-bottom: 0;
   -moz-osx-font-smoothing: grayscale;
@@ -798,11 +798,11 @@ body {
   color: #d41c46;
 }
 #header-post #toc .toc-level-1 {
-  color: #b9babc;
+  color: #000000;
 }
 #header-post #toc .toc-level-2 {
   font-size: 0.9rem;
-  color: #b9babc;
+  color: #000000;
 }
 #header-post #toc .toc-level-2:before {
   content: "#";
@@ -1047,7 +1047,7 @@ body {
   align-items: center;
   display: block;
   font-size: 14px;
-  color: #666;
+  color: rgb(8, 8, 8);
   min-width: 100px;
   margin-right: 16px;
 }
@@ -2180,6 +2180,6 @@ pre code {
   max-width: 130px;
   margin: 20px auto;
   border-width: 2px;
-  border-color: #fff;
+  border-color: #ffffff;
   font-weight: 100;
 }
