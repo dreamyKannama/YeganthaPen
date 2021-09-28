@@ -45,6 +45,7 @@
   
   #slider {
     height: 55vw;
+    width:60vw;
     position: relative;
     perspective: 1000px;
     transform-style: preserve-3d;
@@ -128,92 +129,45 @@
   #slide9 { background: #FF5722 }
   #slide10 { background: #FF5722 }
   */
-
-  @media only screen and (max-width:300px){
- 
-   
-  [type=radio] {
-    display: none;
-  }
-  #slider {
-    margin-left: -90px;
-    margin-top: 50px;
-    justify-content: center;
-    height:150vw;
-    width:150vw;
+  @media only screen and (max-width: 500px) { 
+    #slider {
+    height: 150vw;
+	  width:150vw;
+    margin-left: 50px;
     position: relative;
     perspective: 1000px;
-    transform-style: preserve-3d;
+    transform-style: preserve-3d;}
+  #slider label {
+    margin: auto;
+	  margin-left:-30px;
+    width: 60%;
+    height: 80%;
+    border-radius: 8px;
+    position: absolute;
+    left: 0; right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;}
   }
 
-    #slider label{
-      margin-top: 8px;
-    } 
-    #slider #firstimg{
-   margin-left:5vw;
-   margin-top: 9px;
+  @media only screen and (max-width: 780px) { 
+    #slider {
+    height: 80vw;
+	  width:80vw;
+    margin-left: 100px;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;}
+  #slider label {
+    margin: auto;
+	  margin-left:-30px;
+    width: 60%;
+    height: 80%;
+    border-radius: 8px;
+    position: absolute;
+    left: 0; right: 0;
+    cursor: pointer;
+    transition: transform 0.4s ease;}
   }
-  #slider #secondimg{
-    margin-left: 9px;
-    margin-top: 9px;
-    
-  }
-  #slider #firsttext{
-    margin-left:9px;
-    color: white;
-    text-shadow: 5px 2px 5px rgb(255, 255, 255); 
-  }
-  #slider #secondtext{
-    margin-left: 9px; 
-    color: white;
-    text-shadow: 5px 2px 5px rgb(255, 255, 255); 
-  }
-
-
-} 
-
-@media only screen and (max-width:900px){
- 
-   
- [type=radio] {
-   display: none;
- }
- #slider {
-   margin-left: -10px;
-   margin-top: 50px;
-   justify-content: center;
-   height:80vw;
-   width:80vw;
-   position: relative;
-   perspective: 1000px;
-   transform-style: preserve-3d;
- }
-
-   #slider label{
-     margin-top: 8px;
-   } 
-   #slider #firstimg{
-  margin-left:6vw;
-  margin-top: 9px;
- }
- #slider #secondimg{
-   margin-left: 6vw;
-   margin-top: 2px;
-   
- }
- #slider #firsttext{
-   margin-left:6vw;
-   color: white;
-   text-shadow: 5px 2px 5px rgb(255, 255, 255); 
- }
- #slider #secondtext{
-   margin-left: 6vw; 
-   color: white;
-   text-shadow: 5px 2px 5px rgb(255, 255, 255); 
- }
-
-
-} 
   </style>
 
 <body>
@@ -245,7 +199,7 @@
             </ul>
           </div>
         </header> 
-
+        <br><br>
     <section id="slider">
       <input type="radio" name="slider" id="s1">
       <input type="radio" name="slider" id="s2">
@@ -254,13 +208,13 @@
       <input type="radio" name="slider" id="s5">
       <label for="s1" id="slide1">
           <div id="firstimg">
-            <img  alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
+            <img  id="imageabt" alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
           </div>
           <div id="firsttext">
             Self Taught Artist
           </div>
           <div id="secondimg">
-            <img  alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
+            <img id="imageabt" alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
           </div>
           <div id="secondtext">
             Computer Science Engg
@@ -268,13 +222,13 @@
       </label>
       <label for="s2" id="slide2">
         <div id="firstimg">
-          <img  alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
+          <img  id="imageabt" alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
         </div>
         <div id="firsttext">
           Self Taught Artist
         </div>
         <div id="secondimg">
-          <img  alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
+          <img  id="imageabt" alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
         </div>
         <div id="secondtext">
           Computer Science Engg
@@ -282,13 +236,13 @@
       </label>
       <label for="s3" id="slide3">
         <div id="firstimg">
-          <img  alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
+          <img  id="imageabt" alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
         </div>
         <div id="firsttext">
           Self Taught Artist
         </div>
         <div id="secondimg">
-          <img  alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
+          <img id="imageabt" alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
         </div>
         <div id="secondtext">
           Computer Science Engg
@@ -296,13 +250,13 @@
       </label>
       <label for="s4" id="slide4">
         <div id="firstimg">
-          <img  alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
+          <img  id="imageabt" alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
         </div>
         <div id="firsttext">
           Self Taught Artist
         </div>
         <div id="secondimg">
-          <img  alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
+          <img  id="imageabt" alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
         </div>
         <div id="secondtext">
           Computer Science Engg
@@ -310,13 +264,13 @@
       </label>
       <label for="s5" id="slide5">
         <div id="firstimg">
-          <img  alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
+          <img  id="imageabt" alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
         </div>
         <div id="firsttext">
           Self Taught Artist
         </div>
         <div id="secondimg">
-          <img  alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
+          <img  id="imageabt" alt="Logo" src="/images/LOGO.jpg"  style ="border-radius: 50%;" width="150" height="150">
         </div>
         <div id="secondtext">
           Computer Science Engg
