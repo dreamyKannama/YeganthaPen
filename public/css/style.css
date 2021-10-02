@@ -557,6 +557,27 @@ body {
     text-align: justify;
   }
 }
+
+@media only screen and (max-width: 480px) { 
+  #slider {
+  height: 150vw;
+  width:150vw;
+  margin-left: 50px;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;}
+#slider label {
+  margin: auto;
+  margin-left:-30px;
+  width: 60%;
+  height: 80%;
+  border-radius: 8px;
+  position: absolute;
+  left: 0; right: 0;
+  cursor: pointer;
+  transition: transform 0.4s ease;}
+}
+
 #header {
   max-width: 710px;
   width: 100%;
@@ -639,7 +660,6 @@ body {
   filter: none;
 }
 @media screen and (max-width: 480px) {
-
 
   #header #title {
     padding-top: 9px;
@@ -826,8 +846,6 @@ body {
   display: none;
 }
 @media screen and (max-width: 500px) {
-
-
   #header-post {
     display: none;
   }
