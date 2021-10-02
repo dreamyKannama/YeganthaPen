@@ -15,17 +15,17 @@ For Kurinji, there are,bloomed flowerBuds-full sized, mid-size, small sizeLeaves
 
 Step 3: Simplify the overall structure of a flower with basic shapes. Here, I have Identified the shapes such as oval as overall structure, small circles.
 
-[![Image idea](/images/kurinji-step1.jpg)](/images/kurinji-step1.jpg)
+[![Image idea](/public/images/kurinji-step1.jpg)](/public/images/kurinji-step1.jpg)
 
 Step 4: Draw the blooms inside the oval shape.Below, the simplified version of the flower is provided.
 
-[![Image idea](/images/kurinji-step2.jpg)](/images/kurinji-step2.jpg)
+[![Image idea](/public/images/kurinji-step2.jpg)](/public/images/kurinji-step2.jpg)
 
 Step 5: Fill with patterns inside the stem, bloom, and buds.
 
-[![Image idea](/images/kurinjifinalsteps.jpg)](/images/kurinjifinalsteps.jpg)
+[![Image idea](/public/images/kurinjifinalsteps.jpg)](/public/images/kurinjifinalsteps.jpg)
 
 And here, the final colored version of the flower.
 
-[![Image idea](/images/kurinji.jpg)](/images/kurinji.jpg)
+[![Image idea](/public/images/kurinji.jpg)](/public/images/kurinji.jpg)
 

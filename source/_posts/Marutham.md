@@ -21,26 +21,26 @@ Leaves.
 
 Step 3: Draw a group of oval sizes that represents the bunch of fruits that the oval occupies.
 
-[![Image idea](/images/Marutham-step1.jpg)](/images/Marutham-step1.jpg)
+[![Image idea](/public/images/Marutham-step1.jpg)](/public/images/Marutham-step1.jpg)
 
 Step 4: Inside the oval, draw small circles for individual fruits.
 
 
-[![Image idea](/images/Marutham-step2.jpg)](/images/Marutham-step2.jpg)
+[![Image idea](/public/images/Marutham-step2.jpg)](/public/images/Marutham-step2.jpg)
 
 Step 5: Draw branches that connect the drawn circle. Some of them will represent the buds as well.
 
-[![Image idea](/images/Marutham-step3.jpg)](/images/Marutham-step3.jpg)
+[![Image idea](/public/images/Marutham-step3.jpg)](/public/images/Marutham-step3.jpg)
 
 Step 6: Draw the leaves along with branches.
 
 
-[![Image idea](/images/Marutham-step4.jpg)](/images/Marutham-step4.jpg)
+[![Image idea](/public/images/Marutham-step4.jpg)](/public/images/Marutham-step4.jpg)
 
 Step 7: For Drawing fruits, there will be three or more hemispheres for a fruit. The below picture represents how to draw a single fruit.
 
 
-[![Image idea](/images/Marutham-step6.jpg)](/images/Marutham-step6.jpg)
+[![Image idea](/public/images/Marutham-step6.jpg)](/public/images/Marutham-step6.jpg)
 
 Things to remember, when it was facing the front side, three sides will be visible.
 When the fruits bunch turned upside down, over four sides will be visible.
@@ -50,14 +50,14 @@ Step 8: In the branches left out for buds and fruits, draw small fruits and buds
 And,here the final picture of the outlined flower
 
 
-[![Image idea](/images/Marutham-step7.jpg)](/images/Marutham-step7.jpg)
+[![Image idea](/public/images/Marutham-step7.jpg)](/public/images/Marutham-step7.jpg)
 
 
-[![Image idea](/images/Marutham-step8.jpg)](/images/Marutham-step8.jpg)
+[![Image idea](/public/images/Marutham-step8.jpg)](/public/images/Marutham-step8.jpg)
 
 Step 9: Ink the outline and color them. Marutham Mostly looks green. The shades of green, yellow caused to color them.
 
 
-[![Image idea](/images/Marutham.jpg)](/images/Marutham.jpg)
+[![Image idea](/public/images/Marutham.jpg)](/public/images/Marutham.jpg)
 
 

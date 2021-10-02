@@ -3,7 +3,7 @@ title: WHAT REQUIRES TO BE SKILLED FROM AN "ME" PERSPECTIVE.
 date: 2021-09-26 12:55:46
 tags:
 ---
-[![Image idea](/images/skillset.png)](/images/skillset.png)
+[![Image idea](/public/images/skillset.png)](/public/images/skillset.png)
 
 Disclaimer: The Following content is only from my perspective. There is no assurance that if you follow, you can do it. ACT and REACT according to your situation, surrounding so that Things will work in an optimized way. It was self-learning from an average observer and listener ☺️☺️.  
 
