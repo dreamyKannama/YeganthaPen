@@ -1,8 +1,8 @@
 nav:
-  Home: /public/home/
-  About: /public/about/
-  Writing: /public/blog/
-  Sketches: /public/sketches/
+  Home: /home/
+  About: /about/
+  Writing: /blog/
+  Sketches: /sketches/
 
 #projects_url: http://github.com/tzvetkov75
 
