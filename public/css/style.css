@@ -500,7 +500,7 @@ body {
   background: none;
 }
 .content a.icon:hover {
-  color: #d41c46;
+  color: #130469;
 }
 .content h1 a,
 .content .h1 a,
@@ -760,7 +760,7 @@ body {
   font-size: 0.8rem;
   font-style: normal;
   font-weight: 200;
-  color: #5bac4a;
+  color: #2f0d80;
 }
 #header-post #nav ul {
   line-height: 15px;
@@ -910,7 +910,7 @@ body {
   background: none;
 }
 #footer-post a.icon:hover {
-  color: #d41c46;
+  color: #2f0d80;
 }
 #footer-post #nav-footer {
   margin-left: 1rem;
