@@ -1,16 +1,16 @@
 ---
 layout: 8
-title: 8 == ∞. An Approach To Infinity LifeLine and Life-Balance Routine.
+title: Life-Balance
 date: 2021-09-26 12:56:59
 tags:
 ---
 
-[![Image idea](/public/images/infinity.jpg)](/public/images/infinity.jpg)
+
 
 
 # 8 == ∞. An Approach To Infinity LifeLine and Life-Balance Routine.
 
-
+[![Image idea](/public/images/infinity.jpg)](/public/images/infinity.jpg)
 
 We Humans were Live under a time cycle of 24-hrs per day. 
 
