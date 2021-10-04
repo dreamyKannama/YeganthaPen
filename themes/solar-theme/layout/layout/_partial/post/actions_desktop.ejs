@@ -1,15 +1,19 @@
 <div id="header-post">
   <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
   <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
-  <span id="menu">
-    <span id="nav">
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;">
+  <i class="fa fa-chevron-up fa-lg"></i></a>
+    <div id="nav">
       <ul>
+        <li class="icon">
+          <a href="#"><i class="fa fa-bars fa-2x"></i></a>
+        </li>
         <% for (var i in theme.nav) { %> 
           <li><a href="<%- url_for(theme.nav[i]) %>"><%= i %></a></li>
         <% } %>
       </ul>
-    </span>
+    </div>
+ 
     <br/>
     <span id="actions">
       <ul>
