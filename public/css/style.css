@@ -494,7 +494,7 @@ body {
   background-image: linear-gradient(transparent, transparent 5px, #b9babc 5px, #b9babc);
 }
 .content a:hover {
-  background-image: linear-gradient(transparent, transparent 4px, #d41c46 4px, #d41c46);
+  background-image: linear-gradient(transparent, transparent 4px, #5128e7 4px, #5128e7);
 }
 .content a.icon {
   background: none;
@@ -643,7 +643,7 @@ body {
   display: inline-block;
   vertical-align: middle;
   margin-right: 15px;
-  border-right: 1px dotted #5bac4a;
+  border-right: 1px dotted #271174;
 }
 #header #nav ul .icon {
   display: none;
@@ -704,7 +704,7 @@ body {
   background: none;
 }
 #header-post a.icon:hover {
-  color: #d41c46;
+  color: #5128e7;
 }
 #header-post ol {
   list-style-type: none;
