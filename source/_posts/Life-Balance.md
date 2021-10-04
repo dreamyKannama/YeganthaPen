@@ -29,7 +29,6 @@ Let Us see the Possibilities this approach may get failed and what are all effec
 
 # 8-hours for Work/study.
 
-
 ### Work or study within your threshold limits.
 
       We, Humans, invented and Discovered many things around us, only to ease up the works that we are doing on a day-to-day basis. Because we humans have limitations in our energy, stamina, mindset, etc., 
