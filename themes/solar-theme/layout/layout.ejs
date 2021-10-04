@@ -2,13 +2,15 @@
 <html<%= config.language ? " lang=" + config.language.substring(0, 2) : ""%>>
 <%- partial('_partial/head') %>
 <body>
-   <!--<%- partial('_partial/banner') %>--> 
-   <section id="logo">
-   <img  alt="Logo" src="/public/images/LOGO.jpg" width="280" height="260">
-  </section>
-  <br/><br/><br/><br/><br/>
+   <!--<%- partial('_partial/banner') %>-->
+   <div class="banner">
+    <section id="logo">
+      <img  alt="Logo" src="/public/images/LOGO.jpg" width="280" height="260">
+    </section>
+</div>
+</br></br>
+ 
     <div class="background">
-     
       <% if (is_post()) { %>
         <%- partial('_partial/post/actions_desktop') %>
       <% } %>
