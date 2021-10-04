@@ -6,10 +6,7 @@
     <span id="nav">
       <ul>
         <% for (var i in theme.nav) { %> 
-          <%= theme %>
-          <%= nav %>
-          <%= i %>
-          <li><a href="<%- url_for(theme.nav[i]) %>"><%= i %></a></li>
+          <li><a href="<%= theme.nav[i] %>"><%= i %></a></li>
         <% } %>
       </ul>
     </span>
