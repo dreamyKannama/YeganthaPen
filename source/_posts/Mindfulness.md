@@ -1,12 +1,11 @@
 ---
 layout: 8
-title: Mindfulness
+title: Mindfulness😇😇. A Well-Being approach that Everyone Should Follow.
 date: 2021-09-26 12:56:59
 tags:
 ---
 
-# Mindfulness😇😇. A Well-Being approach that Everyone Should Follow.
-skillset
+
 
 [![Image idea](/public/images/infinity.jpg)](/public/images/mindfulness.jpg)
 
