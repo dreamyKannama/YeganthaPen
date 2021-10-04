@@ -1,14 +1,9 @@
 ---
 layout: 8
-title: Life-Balance
+title: 8 == ∞. An Approach To Infinity LifeLine and Life-Balance Routine.
 date: 2021-09-26 12:56:59
 tags:
 ---
-
-
-
-
-# 8 == ∞. An Approach To Infinity LifeLine and Life-Balance Routine.
 
 [![Image idea](/public/images/infinity.jpg)](/public/images/infinity.jpg)
 
