@@ -56,29 +56,26 @@
   </section>
 </div>
 </br></br>
-    <div class="background">
-      
+    <div class="background"> 
       <div class="content index width mx-auto px2 my4">
-          
-            <header id="header">
-  </a>
-  <div id="nav">
-    <ul>
-      <li class="icon">
-        <a href="#"><i class="fa fa-bars fa-2x"></i></a>
-      </li>
-       
-        <li><a href="/public/home/">Home</a></li>
-       
-        <li><a href="/public/about/">About</a></li>
-       
-        <li><a href="/public/blog/">Writing</a></li>
+        <header id="header">
+        <div id="nav">
+          <ul>
+            <li class="icon">
+              <a href="#"><i class="fa fa-bars fa-2x"></i></a>
+            </li>
+            
+              <li><a href="/public/home/">Home</a></li>
+            
+              <li><a href="/public/about/">About</a></li>
+            
+              <li><a href="/public/blog/">Writing</a></li>
 
-        <li><a href="/public/sketches/">Sketches</a></li>
-        
-    </ul>
-  </div>
-</header>
+              <li><a href="/public/sketches/">Sketches</a></li>
+              
+          </ul>
+        </div>
+        </header>
 
           
 <ul class="post-list">  
@@ -132,7 +129,7 @@
     
   </p>
 </section>
-      </div>
+</div>
       
       <footer id="footer">
   <div class="footer-left">
@@ -165,15 +162,18 @@
 
 <!-- Disqus Comments -->
   </div>
-    <style>
-
-      #about
-      {
-        display: inline; 
-        padding:0.5em;
-        margin: 10px auto auto 230px; 
-      }
-      #title{
+  <style>
+    #about
+          {
+            display: inline; 
+            padding:0.5em;
+            margin: 10px auto auto 230px; 
+          }
+      #image-cards{
+              border-radius: 12px;
+            }
+    
+    #title{
             text-align: center;
             color: black;
           }
@@ -182,21 +182,60 @@
             text-align: center;
             color: black;
           }
-
-          @media screen and (max-width: 500px) {
+    
+      #homeCard{
+        display: flex;
+        align-items: flex-end;
+        grid-gap: 4rem;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 4rem;
+        padding: 4rem;
+        margin: 0 auto;
+        width: max-content;
+    
+      }
+      
+      #homeCard:hover {
+      transform: rotate(0);
+      }
+    
+      /*Media Queries*/
+      @media screen and (max-width: 1285px) {
+        #homeCard {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    
+    @media screen and (max-width: 900px) {
+      #homeCard {
+        grid-template-columns: 1fr;
+      }
+      #homeCard {
+        justify-content: center;
+      }
+      #homeCard {
+        margin-left: 0;
+        text-align: center;
+      }
+    }
+    
+    @media screen and (max-width: 500px) {
       #homeCard {
         padding: 4rem 2rem;
       }
       #homeCard {
         max-width: calc(100vw - 4rem);
       }
-
+    
       #about
-      {
-        display: inline; 
-        padding:0.5em;
-        margin: 0px 0px 0px 0px; 
-      }
+          {
+            display: inline; 
+            padding:0.5em;
+            margin: 0px 0px 0px 0px; 
+          }
     }
     </style>
 </body>
