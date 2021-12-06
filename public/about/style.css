@@ -1,3 +1,7 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0px}
+
+
 #slide-cards1 { background: linear-gradient(to bottom right,#bfee3e,#3684dd); perspective: 1000px;
     transform-style: preserve-3d; border-radius:12px; height:380px;
     width:300px;}
