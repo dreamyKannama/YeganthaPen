@@ -33,7 +33,7 @@ body {font-family: Verdana, sans-serif; margin:0px}
 
 /*image and text alignment*/
 #imageabt #text-label{
-    align-items: center;
+    margin:40px 0px 0px 0px;
 }
 /* The dots/bullets/indicators */
 .dot {
