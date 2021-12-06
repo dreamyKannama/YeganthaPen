@@ -1,5 +1,10 @@
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0px}
+#logo{
+    align-items: center; 
+    margin: 0 auto;
+    justify-content: center;
+  }
 
 
 #slide-cards1 { background: linear-gradient(to bottom right,#bfee3e,#3684dd); perspective: 1000px;
