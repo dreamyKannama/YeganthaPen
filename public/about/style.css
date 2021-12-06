@@ -1,0 +1,101 @@
+#slide-cards1 { background: linear-gradient(to bottom right,#bfee3e,#3684dd); perspective: 1000px;
+    transform-style: preserve-3d; border-radius:12px; height:380px;
+    width:300px;}
+  #slide-cards2{ background: linear-gradient(to bottom right,#c069e2,#48b1bf); perspective: 1000px;
+    transform-style: preserve-3d;border-radius: 12px;height:380px;
+    width:300px;}
+  #slide-cards3 { background: linear-gradient(to bottom right,#6a3dd3,#62b48e);perspective: 1000px;
+    transform-style: preserve-3d;border-radius: 12px;height:380px;
+    width:300px; }
+  #slide-cards4 { background: linear-gradient(to bottom right,#a6f7d5,#82e264);perspective: 1000px;
+    transform-style: preserve-3d;border-radius: 12px;height:380px;
+    width:300px;}
+  #slide-cards5 { background: linear-gradient(to bottom right,#eeafaf,#e9ab65);perspective: 1000px;
+    transform-style: preserve-3d;border-radius: 12px;height:380px;
+    width:300px;}
+	
+/* Slideshow container */
+.slideshow-container {
+  max-width: 280px;
+  position: relative;
+  margin: auto;
+  border-radius:12px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: auto;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/*On smaller screens, decrese the image size*/
+@media only screen and (max-width:300px){
+ .slider{
+  margin: auto;
+  vertical-align: middle;
+  width:100px;
+  margin:50px;
+  border-radius:12px;
+
+ }    
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+}
+
+@media only screen and (max-width:500px){
+  .slider{
+   margin: auto;
+   vertical-align: middle;
+   width:200px;
+   margin:50px;
+   border-radius:12px;
+  } 
+  .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+  }

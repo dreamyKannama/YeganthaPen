@@ -32,126 +32,6 @@
 <script src="/public/lib/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.4.0"></head>
-<style>
-  
-  * {
-    margin: 0;
-    padding: 0;
-  }
-   
-  [type=radio] {
-    display: none;
-  }
-  
-  #slider {
-    height: 55vw;
-    width:60vw;
-    position: relative;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-  }
-  
-  #slider label {
-    margin: auto;
-    width: 40%;
-    height: 60%;
-    border-radius: 8px;
-    position: absolute;
-    left: 0; right: 0;
-    cursor: pointer;
-    transition: transform 0.4s ease;
-  }
-
-  #slider #firstimg{
-   margin-left: 80px;
-   margin-top: 20px;
-  }
-  #slider #secondimg{
-    margin-left: 80px;
-    margin-top: 20px;
-    
-  }
-  #slider #firsttext{
-    margin-left: 80px;
-    color: white;
-    text-shadow: 5px 2px 5px rgb(255, 255, 255); 
-  }
-  #slider #secondtext{
-    margin-left: 80px; 
-    color: white;
-    text-shadow: 5px 2px 5px rgb(255, 255, 255); 
-  }
-
-  #s1:checked ~ #slide4, #s2:checked ~ #slide5,
-  #s3:checked ~ #slide1, #s4:checked ~ #slide2,
-  #s5:checked ~ #slide3 {
-    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-    transform: translate3d(-30%,0,-200px);
-  }
-  
-  #s1:checked ~ #slide5, #s2:checked ~ #slide1,
-  #s3:checked ~ #slide2, #s4:checked ~ #slide3,
-  #s5:checked ~ #slide4 {
-    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-    transform: translate3d(-15%,0,-100px);
-  }
-  
-  #s1:checked ~ #slide1, #s2:checked ~ #slide2,
-  #s3:checked ~ #slide3, #s4:checked ~ #slide4,
-  #s5:checked ~ #slide5 {
-    box-shadow: 0 13px 25px 0 rgba(0,0,0,.3), 0 11px 7px 0 rgba(0,0,0,.19);
-    transform: translate3d(0,0,0);
-  }
-  
-  #s1:checked ~ #slide2, #s2:checked ~ #slide3,
-  #s3:checked ~ #slide4, #s4:checked ~ #slide5,
-  #s5:checked ~ #slide1 {
-    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-    transform: translate3d(15%,0,-100px);
-  }
-  
-  #s1:checked ~ #slide3, #s2:checked ~ #slide4,
-  #s3:checked ~ #slide5, #s4:checked ~ #slide1,
-  #s5:checked ~ #slide2 {
-    box-shadow: 0 1px 4px 0 rgba(0,0,0,.37);
-    transform: translate3d(30%,0,-200px);
-  }
-  
-  #slide1 { background: linear-gradient(to bottom right,#bfee3e,#3684dd);}
-  #slide2 { background: linear-gradient(to bottom right,#c069e2,#48b1bf);}
-  #slide3 { background: linear-gradient(to bottom right,#6a3dd3,#62b48e); }
-  #slide4 { background: linear-gradient(to bottom right,#a6f7d5,#82e264);}
-  #slide5 { background: linear-gradient(to bottom right,#eeafaf,#e9ab65); }
-  /*
-  #slide6 { background: #FF5722 }
-  #slide7 { background: #FF5722 }
-  #slide8 { background: #FF5722 }
-  #slide9 { background: #FF5722 }
-  #slide10 { background: #FF5722 }
-  */
-  @media only screen and (max-width: 480px) { 
-    #slider {
-    height: 150vw;
-	  width:150vw;
-    margin-left: 100px;
-    position: relative;
-    perspective: 1000px;
-    transform-style: preserve-3d;}
-  #slider label {
-    margin: auto;
-	  margin-left:-30px;
-    width: 60%;
-    height: 80%;
-    border-radius: 8px;
-    position: absolute;
-    left: 0; right: 0;
-    cursor: pointer;
-    transition: transform 0.4s ease;}
-  }
-
-  
-  </style>
-
 <body>
   <div class="banner">
     <section id="logo">
@@ -160,9 +40,7 @@
  </div>
 <br><br>
     <div class="background">
-      
-      <div class="content index width mx-auto px2 my4">
-          
+      <div class="content index width mx-auto px2 my4">  
         <header id="header">
           <div id="nav">
             <ul>
@@ -182,81 +60,85 @@
           </div>
         </header> 
         <br><br>
-    <section id="slider">
-      <input type="radio" name="slider" id="s1">
-      <input type="radio" name="slider" id="s2">
-      <input type="radio" name="slider" id="s3" checked>
-      <input type="radio" name="slider" id="s4">
-      <input type="radio" name="slider" id="s5">
-      <label for="s1" id="slide1">
-          <div id="firstimg">
-            <img  id="imageabt" alt="Logo" src="/public/images/cseng2.jpg"  style ="border-radius: 50%;" width="150" height="150">
-          </div>
-          <div id="firsttext">
-            Self Taught Artist
-          </div>
-          <div id="secondimg">
-            <img id="imageabt" alt="Logo" src="/public/images/cseng1.jpg"  style ="border-radius: 50%;" width="150" height="150">
-          </div>
-          <div id="secondtext">
-            Computer Science Engg
-          </div>
-      </label>
-      <label for="s2" id="slide2">
-        <div id="firstimg">
-          <img  id="imageabt" alt="Logo" src="/public/images/learningenthu2.jpg"  style ="border-radius: 50%;" width="150" height="150">
-        </div>
-        <div id="firsttext">
-          Learning Enthu
-        </div>
-        <div id="secondimg">
-          <img  id="imageabt" alt="Logo" src="/public/images/writing.jpg"  style ="border-radius: 50%;" width="150" height="150">
-        </div>
-        <div id="secondtext">
-         Budding Writer
-        </div>
-      </label>
-      <label for="s3" id="slide3">
-        <div id="firstimg">
-          <img  id="imageabt" alt="Logo" src="/public/images/observer.png"  style ="border-radius: 50%;" width="150" height="150">
-        </div>
-        <div id="firsttext">
-          &nbsp&nbsp  Observer
-        </div>
-        <div id="secondimg">
-          <img id="imageabt" alt="Logo" src="/public/images/listener.jpg"  style ="border-radius: 50%;" width="150" height="150">
-        </div>
-        <div id="secondtext">
-          &nbsp&nbsp  Listener
-        </div>
-      </label>
-      <label for="s4" id="slide4">
-        <div id="firstimg">
-          <img  id="imageabt" alt="Logo" src="/public/images/naturelover.jpg"  style ="border-radius: 50%;" width="150" height="150">
-        </div>
-        <div id="firsttext">
-          &nbsp Nature Lover
-        </div>
-        <div id="secondimg">
-          <img  id="imageabt" alt="Logo" src="/public/images/dreamer.jpg"  style ="border-radius: 50%;" width="150" height="150">
-        </div>
-        <div id="secondtext">
-          &nbsp&nbsp&nbsp Dreamer
-        </div>
-      </label>
-      <label for="s5" id="slide5">
-        <div id="firsttext">
-          <br>
-          Area of Interest
-        </div>
-        <div id="firstimg">
-          <img  id="imageabt" alt="Logo" src="/public/images/areaofinterest2.jpg"  style="margin-left:-50px;" width="250" height="150">
-        </div>
-        <div id="secondimg">
-          <img  id="imageabt" alt="Logo" src="/public/images/areaofinterest3.jpg"   style="margin-left:-50px;" width="250" height="150">
-        </div>  
-      </label>
-    </section> 
+        <section id="slider">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+            <div id="slide-cards1" alt="about-me">
+              <img  id="imageabt" alt="Logo" src="/public/images/cseng2.jpg"  style ="border-radius: 50%;" width="150" height="150">
+              <label>Self Taught Artist</label>
+              <img  id="imageabt" alt="Logo" src="/public/images/cseng1.jpg"  style ="border-radius: 50%;" width="150" height="150">
+              <label>Computer Science Engg</label>
+            </div>	
+            </div>
+            <div class="mySlides fade">
+            <div id="slide-cards2" alt="about-me">
+              <img  id="imageabt" alt="Logo" src="/public/images/learningenthu2.jpg"  style ="border-radius: 50%;" width="150" height="150">
+              <label>Learning Enthu</label>
+              <img  id="imageabt" alt="Logo" src="/public/images/writing.jpg"  style ="border-radius: 50%;" width="150" height="150">
+              <label>Budding Writer</label>
+            </div>
+            </div>
+            <div class="mySlides fade">
+            <div id="slide-cards3" alt="about-me">
+                <img  id="imageabt" alt="Logo" src="/public/images/observer.png"  style ="border-radius: 50%;" width="150" height="150">
+              <label> &nbsp&nbsp  Observer</label>
+              <img  id="imageabt" alt="Logo" src="/public/images/listener.jpg"  style ="border-radius: 50%;" width="150" height="150">
+              <label>&nbsp&nbsp  Listener<label>
+            </div>
+             </div>
+            <div class="mySlides fade">
+            <div id="slide-cards4" alt="about-me">
+              <img  id="imageabt" alt="Logo" src="/public/images/naturelover.jpg"  style ="border-radius: 50%;" width="150" height="150">
+              <label>&nbsp Nature Lover</label>
+              <img  id="imageabt" alt="Logo" src="/public/images/dreamer.jpg"  style ="border-radius: 50%;" width="150" height="150">
+              <label>&nbsp&nbsp&nbsp Dreamer</label>
+            </div>
+            </div>
+            <div class="mySlides fade">
+            <div id="slide-cards5" alt="about-me">
+              <div id="firsttext"><br>Area of Interest</div>
+                <img  id="imageabt" alt="Logo" src="/public/images/areaofinterest2.jpg"  style ="border-radius: 50%;" width="150" height="150">
+                <img  id="imageabt" alt="Logo" src="/public/images/areaofinterest3.jpg"  style ="border-radius: 50%;" width="150" height="150">
+            </div>
+            </div>
+            </div> 
+        <br>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span> 
+            </div>
+      <section>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
     
     <section id="about">
   
