@@ -72,12 +72,13 @@ body {font-family: Verdana, sans-serif; margin:0px}
 
 /*On smaller screens, decrese the image size*/
 @media only screen and (max-width:300px){
- .slider{
-  margin-left: -120px;
-  vertical-align: middle;
-  width:100px;
-  margin:50px;
-  border-radius:12px;
+ #slider{
+  height: 150vw;
+    width: 150vw;
+    margin-left: -120px;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
 
  }    
 .dot {
@@ -94,12 +95,13 @@ body {font-family: Verdana, sans-serif; margin:0px}
 }
 
 @media only screen and (max-width:500px){
-  .slider{
-   margin: auto;
-   vertical-align: middle;
-   width:200px;
-   margin-left: -120px;
-   border-radius:12px;
+  #slider{
+    height: 150vw;
+    width: 150vw;
+    margin-left: -120px;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
   } 
   .dot {
   cursor: pointer;
@@ -117,3 +119,13 @@ body {font-family: Verdana, sans-serif; margin:0px}
       color: ivory;
       text-shadow: 2px 2px 5px ivory;
   }
+
+@media only screen and (max-width: 480px){
+#slider {
+    height: 150vw;
+    width: 150vw;
+    margin-left: -120px;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}}
