@@ -70,86 +70,44 @@
           </div>
         </header> 
         <br><br>
-        <section id="slider">
-          <div class="slideshow-container">
-            <div class="mySlides fade">
-            <div id="slide-cards1" alt="about-me">
-              <img  id="imageabt" alt="Logo" src="/public/images/cseng2.jpg"  style ="border-radius: 50%;margin-left: 70px;" width="150" height="150">
-              <div id=text-label>Self Taught Artist</div>
-              <img  id="imageabt" alt="Logo" src="/public/images/cseng1.jpg"  style ="border-radius: 50%;margin-left: 70px;" width="150" height="150">
-              <div id=text-label>Computer Science Engg</div>
-            </div>	
-            </div>
-            <div class="mySlides fade">
-            <div id="slide-cards2" alt="about-me">
-              <img  id="imageabt" alt="Logo" src="/public/images/learningenthu2.jpg"  style ="border-radius: 50%;margin-left: 70px;" width="150" height="150">
-              <div id=text-label>Learning Enthu</div>
-             <img  id="imageabt" alt="Logo" src="/public/images/writing.jpg"  style ="border-radius: 50%;margin-left: 70px;" width="150" height="150">
-              <div id=text-label>Budding Writer</div>
-            </div>
-            </div>
-            <div class="mySlides fade">
-            <div id="slide-cards3" alt="about-me">  
-              <img  id="imageabt" alt="Logo" src="/public/images/observer.png"  style ="border-radius: 50%;margin-left: 70px;" width="150" height="150">
-              <div id=text-label>Observer</div>
-              <img  id="imageabt" alt="Logo" src="/public/images/listener.jpg"  style ="border-radius: 50%;margin-left: 70px;" width="150" height="150">
-              <div id=text-label>  Listener</div>
-            </div>
-             </div>
-            <div class="mySlides fade">
-            <div id="slide-cards4" alt="about-me">
-              <img  id="imageabt" alt="Logo" src="/public/images/naturelover.jpg"  style ="border-radius: 50%;margin-left: 70px;" width="150" height="150">
-              <div id=text-label> Nature Lover</div>
-              <img  id="imageabt" alt="Logo" src="/public/images/dreamer.jpg"  style ="border-radius: 50%;margin-left: 70px;" width="150" height="150">
-              <div id=text-label>Dreamer</div>
-            </div>
-            </div>
-            <div class="mySlides fade">
-            <div id="slide-cards5" alt="about-me">
-              <div id="firsttext"><br>Area of Interest</div>
-              <img  id="imageabt" alt="Logo" src="/public/images/areaofinterest2.jpg"  style ="border-radius: 70%;margin-left: 70px;" width="150" height="150">
-              <img  id="imageabt" alt="Logo" src="/public/images/areaofinterest3.jpg"  style ="border-radius: 70%;margin-left: 70px;" width="150" height="150">
-            </div>
-            </div>
-            </div> 
-        <br>
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span> 
-              <span class="dot" onclick="currentSlide(3)"></span> 
-              <span class="dot" onclick="currentSlide(4)"></span> 
-              <span class="dot" onclick="currentSlide(5)"></span> 
-            </div>
-      <section>
-        <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-            
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-            
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-            
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              if (n > slides.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";  
-              }
-              for (i = 0; i < dots.length; i++) {
-                  dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-            }
-            </script>
-    
+        <main class="main-area">
+          <div class="centered">
+      
+              <section class="cards">
+                  <article class="card" style="background: linear-gradient(to bottom right,#bfee3e,#3684dd);">
+                      <a href="#">
+                          
+                      </a>
+                  </article><!-- .card -->
+  
+                  <article class="card" style="background: linear-gradient(to bottom right,#c069e2,#48b1bf);">
+                      <a href="#">
+                          
+                      </a>
+                  </article><!-- .card -->
+  
+                  <article class="card" style="background: linear-gradient(to bottom right,#6a3dd3,#62b48e);">
+                      <a href="#">
+                      </a>
+                  </article><!-- .card -->
+  
+                  <article class="card" style="background: linear-gradient(to bottom right,#a6f7d5,#82e264);">
+                      <a href="#">
+                          
+                      </a>
+                  </article><!-- .card -->
+      
+      <article class="card" style="background: linear-gradient(to bottom right,#eeafaf,#e9ab65);">
+                      <a href="#">
+                          
+                      </a>
+                  </article><!-- .card -->
+  
+              </section><!-- .cards -->  
+          </div><!-- .centered -->
+          
+      </main>
+        
     <section id="about">
   
       <p style="display: inline">

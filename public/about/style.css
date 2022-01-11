@@ -1,131 +1,57 @@
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0px}
-#logo{
-    align-items: center; 
-    margin: 0 auto;
-    justify-content: center;
-  }
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Patua+One');
+
+/* Card Based Layout - Base styles */
 
 
-#slide-cards1 { background: linear-gradient(to bottom right,#bfee3e,#3684dd); perspective: 1000px;
-    transform-style: preserve-3d; border-radius:12px; height:380px;
-    width:300px;}
-  #slide-cards2{ background: linear-gradient(to bottom right,#c069e2,#48b1bf); perspective: 1000px;
-    transform-style: preserve-3d;border-radius: 12px;height:380px;
-    width:300px;}
-  #slide-cards3 { background: linear-gradient(to bottom right,#6a3dd3,#62b48e);perspective: 1000px;
-    transform-style: preserve-3d;border-radius: 12px;height:380px;
-    width:300px; }
-  #slide-cards4 { background: linear-gradient(to bottom right,#a6f7d5,#82e264);perspective: 1000px;
-    transform-style: preserve-3d;border-radius: 12px;height:380px;
-    width:300px;}
-  #slide-cards5 { background: linear-gradient(to bottom right,#eeafaf,#e9ab65);perspective: 1000px;
-    transform-style: preserve-3d;border-radius: 12px;height:380px;
-    width:300px;}
+.card {
 	
-/* Slideshow container */
-.slideshow-container {
-  max-width: 280px;
-  position: relative;
-  margin: auto;
-  border-radius:12px;
+	perspective: 1000px;
+	margin-bottom: 4em;
+        transform-style: preserve-3d; 
+	border-radius:12px; height:380px;
+        width:300px;	
 }
 
-/*image and text alignment*/
-#imageabt #text-label{
-    margin:40px 0px 0px 0px;
-}
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: auto;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+.card a {
+	color: black;
+	text-decoration: none;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.card a:hover {
+	box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+.card-content {
+	padding: 1.4em;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+.card-content h2 {
+	margin-top: 0;
+	margin-bottom: .5em;
+	font-weight: bold;
 }
 
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+.card-content p {
+	font-size: 80%;
 }
 
+/* Flexbox stuff */
 
-/*On smaller screens, decrese the image size*/
-@media only screen and (max-width:300px){
- #slider{
-  height: 150vw;
-    width: 150vw;
-    margin-left: -120px;
-    position: relative;
-    perspective: 1000px;
-    transform-style: preserve-3d;
+@media screen and (min-width: 40em) {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
- }    
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    .card {
+        flex: 0 1 calc(50% - 1em);
+    }
 }
 
-}
+@media screen and (min-width: 60em) {
 
-@media only screen and (max-width:500px){
-  #slider{
-    height: 150vw;
-    width: 150vw;
-    margin-left: -120px;
-    position: relative;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-  } 
-  .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    .card {
+        flex: 0 1 calc(25% - 1em);
+    }
 }
-  }
- 
-  #text-label{
-      color: ivory;
-      text-shadow: 2px 2px 5px ivory;
-  }
-
-@media only screen and (max-width: 480px){
-#slider {
-    height: 150vw;
-    width: 150vw;
-    margin-left: -120px;
-    position: relative;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-}}
