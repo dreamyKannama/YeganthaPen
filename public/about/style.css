@@ -2,14 +2,13 @@
 
 /* Card Based Layout - Base styles */
 
-
 .card {
 	
 	perspective: 1000px;
 	margin-bottom: 4em;
-        transform-style: preserve-3d; 
+  transform-style: preserve-3d; 
 	border-radius:12px; height:380px;
-        width:300px;	
+  width:300px;	
 }
 
 .card a {
