@@ -1,3 +1,9 @@
+html {
+    height: 100%;
+    border-top: 2px solid #b9babc;
+  }
+
+/*hero of the web page*/
 .header-class {
     display: flex;
     border-bottom: aliceblue;
@@ -8,7 +14,7 @@
     margin: 10px;
     padding: 20px;
   }
-
+ 
   .logo-img{
     width:120px;
     height:80px;
@@ -20,4 +26,32 @@
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 0.01em;
     font-style:normal;
+  }
+
+  /*Media query for other files*/
+  @media only screen and (max-width: 480px) { 
+    .header-class {
+      max-width: 710px;
+      width: 100%;
+      margin: 0 auto 3rem auto;
+    }
+
+    .header-class > div{
+        margin: 10px;
+        padding: 20px;
+      }
+     
+      .logo-img{
+        width:120px;
+        height:80px;
+      }
+      
+      .nav-links{
+        color: #180757;
+        font-size:30px;
+        font-family: 'Roboto Condensed', sans-serif;
+        letter-spacing: 0.01em;
+        font-style:normal;
+      }
+    
   }
