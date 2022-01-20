@@ -1,8 +1,10 @@
 .header-class {
     display: flex;
+    border-bottom: aliceblue;
+    border-bottom: 1em;
   }
   
-  .header-class > div,ul {
+  .header-class > div{
     margin: 10px;
     padding: 20px;
   }
