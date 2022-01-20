@@ -14,9 +14,10 @@
   }
   
   .nav-links{
-    color: linear-gradient(to bottom right,#4530be,#981cbe);
+    color: #180757;
+    margin-bottom: 3px;
     font-family: "Menlo", monospace;
-    font-size: 13px;
+    font-size: 10px;
     letter-spacing: 0.01em;
     font-size: 0.9rem;
     font-style: normal;
