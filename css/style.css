@@ -36,22 +36,35 @@ html {
       margin: 0 auto 3rem auto;
     }
 
-    .header-class > div{
-        margin: 10px;
-        padding: 20px;
+    .header-class .nav-links .icon > div {
+        display: inline-block;
+        position: absolute;
+        right: 1rem;
       }
-     
-      .logo-img{
+
+    .header-class .nav-links {
+        display: none;
+        border-right: 0;}
+
+    .header-class .nav-links div a:hover {
+        background: none;}
+         
+    .header-class .nav-links div:not(:first-child) {
+        padding-top: 1rem;
+        padding-left: 70px;
+        font-size: 1rem;}
+
+    .logo-img{
         width:120px;
         height:80px;
-      }
+    }
       
-      .nav-links{
+    .nav-links{
         color: #180757;
         font-size:30px;
         font-family: 'Roboto Condensed', sans-serif;
         letter-spacing: 0.01em;
         font-style:normal;
-      }
-    
+    }
+  
   }
